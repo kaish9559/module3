@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: scroll;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: hidden;
+  text-align: LEFT;
+
+   
+
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  text-align: center;
+  height: 50px;
+  overflow: hidden;
+  background-color: white;
+  display: block;
+  color:red;
+
+
+}
+h2 {
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+
+
+/* Create three unequal columns that floats next to each other */
+.row {
+  float: left;
+  padding: 10px;
+  
+
+}
+
+
+/* Left and right column */
+.column.side {
+  background-color: #ddd;
+  width: 90%;
+  opacity: .6;
+  display: block;
+}
+
+/* Middle column */
+.column.middle {
+  width: 90%;
+  opacity: .6;
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+img {
+
+  float:right;
+ 
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  float :right; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>FOOD,LLC</h1><div class="dropdown">
+  <button class="dropbtn"> <img src="nv.png" height="30" width="30"></button>
+  <div class="dropdown-content">
+  <a href="#">chicken</a>
+  <a href="#">beef</a>
+  <a href="#">sushi</a>
+  </div>
+</div>
+  </div>
+
+<div class="row">
+<div class="topnav">
+  <a href="https://wwww.google.com">OUR MENU</a>
+</div>
+
+
+
+  <div class="column side">
+
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+  </div>
+</div>
+</div>
+
+  
+</body>
+</html>
